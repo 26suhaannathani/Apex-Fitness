@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Strength - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Elite Strength</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Archer Push-Up", steps: ["Start in a wide push-up position with arms much wider than shoulder-width.", "Shift your weight to the right side bending your right elbow to lower down.", "Keep your left arm straight and extended as you press through your right side.", "Push back to centre and repeat the movement shifting to the left side."] },
+  { name: "Pistol Squat Assist", steps: ["Stand on one leg and extend the other leg straight out in front of you.", "Hold onto a doorframe or wall lightly for balance as needed.", "Slowly bend your standing knee and lower your body as deep as possible.", "Press back up through your heel to standing and complete all reps before switching legs."] },
+  { name: "Explosive Push-Up", steps: ["Begin in a standard push-up position with core engaged and body straight.", "Lower your chest to just above the floor in a controlled motion.", "Push up explosively so your hands leave the floor at the top of the rep.", "Land softly and absorb the impact by bending your elbows immediately into the next rep."] },
+  { name: "Bulgarian Split Squat", steps: ["Stand in front of a raised surface and place one foot behind you on it.", "Lower your back knee toward the floor bending your front knee.", "Keep your front foot flat and your chest tall throughout the movement.", "Drive through your front heel to return to the starting position and repeat."] },
+  { name: "Pike Push-Up", steps: ["Begin in a downward dog position with hips raised high and arms straight.", "Bend your elbows and lower the top of your head toward the floor.", "Keep your legs as straight as possible and hips elevated throughout.", "Push back up strongly through your shoulders to the starting position."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

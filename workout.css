@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0a0f14;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.workout-container {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 30px;
+}
+
+.left {
+  flex: 2;
+  background: #0f1a22;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workout-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.progress {
+  color: #8af6ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.exercise-name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.steps { flex: 1; }
+
+.steps p {
+  font-size: 18px;
+  margin: 12px 0;
+  line-height: 1.8;
+  color: #c9d7dc;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.timer {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #8af6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  background: transparent;
+  color: #8af6ff;
+  border: 2px solid #8af6ff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: #8af6ff;
+  color: #081015;
+}
+
+.right {
+  flex: 1;
+  background: #0c151c;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exercise-item {
+  padding: 14px;
+  background: #1a2530;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.exercise-item.active {
+  background: #8af6ff;
+  color: #081015;
+  font-weight: 700;
+}
+
+.next-btn {
+  background: #8af6ff;
+  color: #081015;
+  border: none;
+  padding: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}

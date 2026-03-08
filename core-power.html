@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Power - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Core Power</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Plank to Downward Dog", steps: ["Begin in a high plank position with your hands directly under your shoulders.", "Push your hips upward toward the ceiling forming an inverted V shape.", "Straighten your arms and press your heels toward the floor.", "Return to the plank position in a controlled manner and repeat."] },
+  { name: "Bicycle Crunches", steps: ["Lie on your back with hands lightly behind your head and legs raised.", "Bring your right elbow toward your left knee while extending your right leg straight.", "Rotate to the other side bringing your left elbow toward your right knee.", "Continue alternating sides in a smooth pedalling motion keeping your lower back pressed down."] },
+  { name: "Side Plank", steps: ["Lie on your side and prop yourself up on your forearm with elbow under your shoulder.", "Lift your hips off the floor so your body forms a straight diagonal line.", "Stack your feet or stagger them for balance and hold the position.", "Keep your core tight and breathe steadily for the full duration then switch sides."] },
+  { name: "Leg Raises", steps: ["Lie flat on your back with your legs straight and hands placed under your lower back.", "Keeping your legs straight raise them slowly up toward the ceiling.", "Lower them back down slowly stopping just before your heels touch the floor.", "Keep your lower back pressed to the floor throughout every rep."] },
+  { name: "Hollow Body Hold", steps: ["Lie on your back and press your lower back firmly into the floor.", "Extend your arms overhead and lift your legs to about thirty degrees off the floor.", "Lift your head and shoulders slightly off the ground and hold the position.", "Maintain tension throughout your body and breathe in short controlled breaths."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

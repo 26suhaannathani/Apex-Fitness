@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bodyweight Basics - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Bodyweight Basics</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Bodyweight Squat", steps: ["Stand with your feet shoulder-width apart and toes pointing slightly outward.", "Keep your chest up and your back straight as you begin to lower yourself down.", "Bend your knees and push your hips back as if sitting into a chair.", "Lower until your thighs are parallel to the floor then push back up through your heels."] },
+  { name: "Knee Push-Up", steps: ["Start on all fours with your knees on the ground and hands wider than shoulder-width.", "Lower your chest toward the floor in a controlled and steady movement.", "Keep your core tight and your back flat throughout the movement.", "Push back up to the starting position and repeat without locking your elbows."] },
+  { name: "Reverse Lunge", steps: ["Stand tall with your feet together and hands on your hips.", "Step one foot backward and lower your back knee toward the floor.", "Keep your front knee directly above your ankle and your chest upright.", "Push through your front heel to return to standing and alternate legs."] },
+  { name: "Superman Hold", steps: ["Lie face down on the floor with your arms extended straight out in front of you.", "At the same time lift both your arms and legs off the floor.", "Hold the raised position for two seconds squeezing your glutes and back.", "Lower back down slowly and repeat the movement in a controlled manner."] },
+  { name: "Wall Sit", steps: ["Stand with your back flat against a wall and feet about two feet in front.", "Slide your back down the wall until your thighs are parallel to the floor.", "Keep your knees above your ankles and your back fully pressed into the wall.", "Hold the position and breathe steadily without letting your hips drop lower."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

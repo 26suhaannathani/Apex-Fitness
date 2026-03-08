@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIIT Dominator - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">HIIT Dominator</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Burpees", steps: ["Stand with feet shoulder-width apart then drop your hands to the floor.", "Jump or step both feet back into a strong plank position.", "Perform one push-up then jump your feet back toward your hands.", "Explode upward into a jump clapping your hands above your head at the top."] },
+  { name: "Jump Squats", steps: ["Stand with feet shoulder-width apart and lower into a deep squat.", "Drive powerfully through your legs and jump as high as you can.", "Swing your arms for momentum and keep your chest upright.", "Land softly on the balls of your feet bending your knees to absorb impact."] },
+  { name: "Mountain Climbers", steps: ["Start in a high plank position with hands directly under your shoulders.", "Drive your right knee toward your chest as fast as possible.", "Immediately switch and drive your left knee in as you extend your right leg back.", "Continue alternating as fast as you can while keeping your hips level and core tight."] },
+  { name: "Tuck Jumps", steps: ["Stand with feet hip-width apart and bend slightly at the knees.", "Jump explosively upward and drive both knees toward your chest.", "Grab your knees briefly at the top if possible for full range.", "Land softly with bent knees and immediately reset for the next jump."] },
+  { name: "Sprint in Place", steps: ["Stand tall and begin running on the spot as fast as you can.", "Drive your knees high with each stride to maximise intensity.", "Pump your arms actively in sync with your legs.", "Maintain top speed for the full duration keeping your core braced."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

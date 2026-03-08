@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardio Starter - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Cardio Starter</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Jumping Jacks", steps: ["Stand straight with your feet together and arms resting at your sides.", "Jump upward while spreading your legs wider than shoulder width apart.", "At the same time raise both arms above your head in a smooth motion.", "Jump back to the starting position and continue repeating at a steady pace."] },
+  { name: "High Knees", steps: ["Stand tall with your back straight and core muscles engaged tightly.", "Lift your right knee up toward your chest as high as possible.", "Quickly switch legs by lowering the right knee and lifting the left knee.", "Continue alternating legs rapidly while maintaining a steady running rhythm."] },
+  { name: "Butt Kicks", steps: ["Stand upright with your feet placed hip width apart comfortably.", "Kick your right heel backward aiming to touch your glutes lightly.", "Lower your right foot and repeat the same movement with your left leg.", "Maintain a light jogging motion while keeping your upper body relaxed."] },
+  { name: "Side Step Touch", steps: ["Step your right foot out toward the right side carefully.", "Bring your left foot in to gently touch beside your right foot.", "Repeat the same movement toward the left side smoothly.", "Keep your knees slightly bent and arms moving naturally for balance."] },
+  { name: "Mountain Climbers", steps: ["Begin in a strong plank position with hands placed under shoulders.", "Drive your right knee forward toward your chest in a quick motion.", "Return the right leg back and immediately bring your left knee forward.", "Continue alternating legs quickly while keeping your back straight and core tight."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

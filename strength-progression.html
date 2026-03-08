@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strength Progression - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Strength Progression</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Wide Push-Up", steps: ["Place your hands wider than shoulder-width apart on the floor.", "Keep your body in a straight line from head to heels with core engaged.", "Lower your chest toward the floor with elbows flaring slightly outward.", "Push back up strongly through your chest and repeat without losing form."] },
+  { name: "Jump Squat", steps: ["Stand with feet shoulder-width apart and lower into a regular squat.", "Drive through your heels and explode upward jumping off the floor.", "Keep your arms swinging naturally for momentum and to aid balance.", "Land softly by bending your knees and immediately lower into the next squat."] },
+  { name: "Walking Lunge", steps: ["Stand upright with your feet together and your hands on your hips.", "Step your right foot forward and lower your back knee toward the floor.", "Push through your front foot to bring your back foot forward to meet it.", "Continue walking forward alternating legs with each controlled step."] },
+  { name: "Diamond Push-Up", steps: ["Place your hands close together under your chest forming a diamond shape.", "Extend your legs behind you and hold a strong plank position.", "Lower your chest toward your hands keeping your elbows close to your body.", "Push back up to full extension and repeat in a slow controlled rhythm."] },
+  { name: "Squat Hold Pulse", steps: ["Lower into a squat position until your thighs are parallel to the ground.", "Hold the bottom position and pulse up and down by a few centimetres.", "Keep your weight in your heels and your chest up throughout.", "Continue pulsing steadily without coming back to a standing position."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

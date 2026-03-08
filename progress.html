@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><a href="index.html">APEX <span>Fitness</span></a></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="workout.html">Workout</a>
+    <a href="progress.html">Progress</a>
+  </div>
+</nav>
+
+<h1 class="main-title">Track Your Progress</h1>
+
+<div class="progress-container">
+
+  <div class="left-column">
+    <div class="profile-card">
+      <div class="user-row">
+        <div class="user-icon">👤</div>
+        <div>
+          <div class="username">Athlete</div>
+          <div class="level">Level <span id="level">1</span></div>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="points-text"><span id="currentPoints">0</span>
+        / 500 Points to Level Up</div>
+    </div>
+
+    <div class="lower-left">
+      <div class="info-box">
+        🔥 Daily Streak
+        <strong><span id="streak">0</span> Days</strong>
+      </div>
+      <div class="info-box">
+        ⭐ Total Points
+        <strong><span id="totalPoints">0</span></strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="stats-section">
+      <h2>Stats</h2>
+      <div class="stats-boxes">
+         <div class="stat-box">
+          <h3>Total Workouts Completed</h3>
+          <p id="workouts">0</p>
+        </div>
+        <div class="stat-box">
+          <h3>Total Exercises Completed</h3>
+          <p id="exercises">0</p>
+        </div>
+        <div class="stat-box">
+          <h3>Total Minutes Exercised</h3>
+          <p id="minutes">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="achievements">
+  <h2>Achievements</h2>
+  <div class="badges">
+    <div class="badge" id="badge1">
+      <div class="medal">🥇</div>
+      <p>First Workout</p>
+    </div>
+    <div class="badge" id="badge2">
+      <div class="medal">🏅</div>
+      <p>100 Points</p>
+    </div>
+    <div class="badge" id="badge3">
+      <div class="medal">🏆</div>
+      <p>2000 Points</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <h2>Apex Training</h2>
+  <p>Helping teenagers build strength, confidence and healthy habits.</p>
+  <p class="copyright">© 2026 Apex Training • All Rights Reserved</p>
+</footer>
+
+<script src="progress.js"></script>
+</body>
+</html>

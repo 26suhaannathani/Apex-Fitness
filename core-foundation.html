@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Foundation - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Core Foundation</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "Dead Bug", steps: ["Lie flat on your back with your arms pointing straight up toward the ceiling.", "Bend your knees to ninety degrees so your shins are parallel to the floor.", "Slowly lower your right arm and left leg toward the floor at the same time.", "Return to the starting position and repeat on the opposite side."] },
+  { name: "Plank Hold", steps: ["Place your forearms on the ground with elbows directly under your shoulders.", "Extend your legs behind you and lift your body off the floor.", "Keep your body in a straight line from head to heels.", "Hold the position while breathing steadily and keeping your core tight."] },
+  { name: "Glute Bridge", steps: ["Lie on your back with knees bent and feet flat on the floor hip-width apart.", "Press through your heels and lift your hips up toward the ceiling.", "Squeeze your glutes at the top and hold for one second.", "Slowly lower your hips back to the floor and repeat."] },
+  { name: "Bird Dog", steps: ["Start on all fours with your hands under your shoulders and knees under hips.", "Extend your right arm forward and your left leg back at the same time.", "Hold for two seconds keeping your back flat and core braced.", "Return to start and repeat on the other side alternating each rep."] },
+  { name: "Crunches", steps: ["Lie on your back with knees bent and hands lightly behind your head.", "Engage your core and curl your upper body forward toward your knees.", "Pause at the top for a moment and feel the contraction in your abs.", "Slowly lower back down without letting your head touch the floor."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>

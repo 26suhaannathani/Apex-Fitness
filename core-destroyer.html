@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Destroyer - Apex Fitness</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="workout.css">
+</head>
+<body>
+<div class="workout-container">
+  <div class="left">
+    <div>
+      <h1 class="workout-title">Core Destroyer</h1>
+      <div class="progress" id="progressText"></div>
+      <div class="exercise-name" id="exerciseTitle"></div>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="bottom">
+      <div class="timer" id="timer">30</div>
+      <div class="buttons">
+        <button onclick="goBack()">BACK</button>
+        <button onclick="startTimer()">START</button>
+        <button onclick="togglePause()" id="pauseBtn">PAUSE</button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="exercise-list" id="exerciseList"></div>
+    <button class="next-btn" onclick="nextExercise()">Next Exercise</button>
+  </div>
+</div>
+<script>
+window.exercises = [
+  { name: "V-Ups", steps: ["Lie flat on your back with arms extended overhead and legs straight.", "Simultaneously lift your legs and upper body off the floor.", "Reach your hands toward your feet forming a V shape at the top.", "Lower back down in a controlled motion without letting your feet touch the floor."] },
+  { name: "Dragon Flags", steps: ["Lie on your back and grip something sturdy behind your head for support.", "Raise your entire lower body and hips off the floor keeping a straight line.", "Lower your body slowly toward the floor while staying rigid from shoulders to feet.", "Stop just before touching down and raise back up using your core strength."] },
+  { name: "Plank Up-Downs", steps: ["Start in a forearm plank position with elbows directly under your shoulders.", "Press up with your right hand then your left hand to reach a high plank.", "Lower back to your right forearm then your left to return to the starting position.", "Alternate which arm leads each rep and keep your hips from rocking side to side."] },
+  { name: "Windshield Wipers", steps: ["Lie on your back and raise both legs straight up toward the ceiling.", "Keeping your upper back flat rotate your legs to the right side slowly.", "Bring them back to the centre then rotate to the left side.", "Control the movement entirely with your core without letting your legs drop suddenly."] },
+  { name: "Spiderman Plank", steps: ["Start in a high plank with hands under shoulders and body in a straight line.", "Bring your right knee out to the side toward your right elbow.", "Return the right leg to plank position and repeat on the left side.", "Move in a slow and controlled manner keeping your hips low throughout."] }
+];
+</script>
+<script src="workout.js"></script>
+</body>
+</html>
