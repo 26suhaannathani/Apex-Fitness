@@ -614,16 +614,22 @@ background: url("https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=
 
 
 @media (max-width: 900px) {
-  .apex, .fitness { font-size: 60px; }
-  nav { padding: 18px 24px; }
-
-  .progress-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px 60px;
+  nav {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  .left-column, .right-column { width: 100%; }
-  .badges { gap: 30px; }
-  .main-title { font-size: 36px; margin-top: 110px; }
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
 }
